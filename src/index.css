@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Clear black border outline on white pieces so they are perfectly legible on any square. */
+.piece-white {
+  text-shadow: 
+    -1px -1px 0 #1e293b,  
+     1px -1px 0 #1e293b,
+    -1px  1px 0 #1e293b,
+     1px  1px 0 #1e293b,
+     0 2px 4px rgba(0, 0, 0, 0.25);
+}
