@@ -69,6 +69,7 @@ export function SidePanel({
           >
             Play vs RL Model (PvE)
           </button>
+          {/* Minimax mode button (commented out)
           <button
             onClick={() => setGameMode('minimax')}
             className={`w-full py-1.5 px-3 rounded text-sm font-medium transition-colors cursor-pointer text-center ${
@@ -79,6 +80,7 @@ export function SidePanel({
           >
             Play vs Minimax (Alpha-Beta)
           </button>
+          */}
           <button
             onClick={() => {
               setGameMode('self_play');
@@ -94,7 +96,7 @@ export function SidePanel({
           </button>
         </div>
 
-        {(gameMode === 'pve' || gameMode === 'minimax') && (
+        {gameMode === 'pve' && (
           <div className="space-y-2 animate-fadeIn pt-1 border-t border-slate-700/30">
             <div className="text-xs font-medium text-slate-400">Your Color:</div>
             <div className="flex gap-2">
@@ -128,6 +130,7 @@ export function SidePanel({
           </div>
         )}
 
+        {/* Minimax depth picker (commented out)
         {gameMode === 'minimax' && (
           <div className="space-y-2 animate-fadeIn pt-1 border-t border-slate-700/30">
             <div className="text-xs font-medium text-slate-400">Search Depth:</div>
@@ -151,6 +154,7 @@ export function SidePanel({
             </div>
           </div>
         )}
+        */}
       </div>
 
       {/* Checkpoints Configuration Section */}
