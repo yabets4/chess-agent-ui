@@ -1,5 +1,6 @@
 # Chess
 
+
 A chess game built with Vite + React + Tailwind CSS v4 that you can play against
 a self-trained AI model, a minimax engine, or against a friend on the same device.
 
